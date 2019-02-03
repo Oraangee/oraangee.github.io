@@ -2,6 +2,7 @@
 @-moz-keyframes    fade-in {   0% { opacity: 0.0; }   100% { opacity: 1; }   }
 @-o-keyframes      fade-in {   0% { opacity: 0.0; }   100% { opacity: 1; }   }
 @keyframes         fade-in {   0% { opacity: 0.0; }   100% { opacity: 1; }   }
+
 body{
   font-family: 'Roboto', sans-serif;
   -webkit-animation: fade-in 2s linear;
@@ -10,21 +11,25 @@ body{
   animation: fade-in 2s linear;
   background-color: #efefef;
 }
+
 a{
   text-decoration: none;
 }
+
 *{
   margin: 0;
   padding: 0;
 }
+
 html, body{
   height: 100%;
-
 }
+
 .wrapper{
   position: relative;
   min-height: 100%;
 }
+
 .content{
   padding-bottom: 90px;
   position: absolute; 
@@ -32,6 +37,7 @@ html, body{
   top: 35%; 
   text-align: center;
 }
+
 .footer{
   position: absolute;
   left: 0;
@@ -41,33 +47,42 @@ html, body{
   background: #000000;
   text-align: center;
 }
+
 .footer > p{
   color: #ffffff;
   margin-top: 15px;
 }
+
 .content > i{
   display: block;
 }
+
 .arrow_r{
   float: right;
 }
+
 .arrow_l{
   float: left;
 }
+
 .arrow_r_d{
   float: right;
 }
+
 .arrow_l_d{
   float: left;
 }
+
 .links > a > img{
   padding: 20px;
 }
+
 .links,.links_o{
   border:2px solid transparent;
   margin:0;
   padding:0;
 }
+
 .link_1{
   opacity:1px;
   z-index:100;
@@ -77,6 +92,7 @@ html, body{
   -o-transition-duration:0.96s;
   -ms-transition-duration:0.96s;
 }
+
 .link_2{
   opacity:1px;
   z-index:100;
@@ -86,6 +102,7 @@ html, body{
   -o-transition-duration:0.96s;
   -ms-transition-duration:0.96s;
 }
+
 .link_3{
   opacity:1px;
   z-index:100;
@@ -95,6 +112,7 @@ html, body{
   -o-transition-duration:0.96s;
   -ms-transition-duration:0.96s;
 }
+
 .link_4{
   opacity:1px;
   z-index:100;
@@ -104,6 +122,7 @@ html, body{
   -o-transition-duration:0.96s;
   -ms-transition-duration:0.96s;
 }
+
 .link_5{
   opacity:1px;
   z-index:100;
@@ -113,6 +132,7 @@ html, body{
   -o-transition-duration:0.96s;
   -ms-transition-duration:0.96s;
 }
+
 .link_6{
   opacity:1px;  
   z-index:100;
@@ -122,24 +142,31 @@ html, body{
   -o-transition-duration:0.96s;
   -ms-transition-duration:0.96s;
 }
+
 .link_1:hover{
   opacity:0.5;
 }
+
 .link_2:hover{
   opacity:0.5; 
 }
+
 .link_3:hover{
   opacity:0.5;
 }
+
 .link_4:hover{
   opacity:0.5;
 }
+
 .link_5:hover{
   opacity:0.5;
 }
+
 .link_6:hover{
   opacity:0.5;
 }
+
 .arrow_l{
   opacity:1px;  
   z-index:100;
@@ -149,9 +176,11 @@ html, body{
   -o-transition-duration:0.96s;
   -ms-transition-duration:0.96s;
 }
+
 .arrow_l:hover{
   opacity:0.5;
 }
+
 .arrow_r{
   opacity:1px;  
   z-index:100;
@@ -161,6 +190,7 @@ html, body{
   -o-transition-duration:0.96s;
   -ms-transition-duration:0.96s;
 }
+
 .arrow_r:hover{
   opacity:0.5;
 }

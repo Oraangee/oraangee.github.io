@@ -9,6 +9,7 @@ body{
   -moz-animation: fade-in 2s linear;
   -o-animation: fade-in 2s linear;
   animation: fade-in 2s linear;
+  background: #efefef;
 }
 
 a{

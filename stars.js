@@ -27,7 +27,7 @@ $(function() {
 
   timedStars = function() {
     if (stars < additionalStars) {
-      drawStar('#7fff00');
+      drawStar('#000000');
       return stars++;
     }
   };

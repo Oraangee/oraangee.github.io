@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+<title>Вход</title>
+{% endblock %}
+
+{% block body %}
+<div class="conteiner">
+    <h1>Вход</h1>
+    <br>
+    <form method="post">
+        <input type="text" class="form-control" name="title" id="title" placeholder="Логин"style="width: 300px;"><br>
+        <input type="text" class="form-control" name="price" id="price" placeholder="Пароль"style="width: 300px;"><br>
+        <a href="/create" type="submit" class="btn btn-success">Войти</a>
+</div>
+
+{% endblock %}

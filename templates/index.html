@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+<title>онлайн магазин</title>
+{% endblock %}
+
+{% block body %}
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal"><h1>Аккаунты с играми и программами</h1>
+          <br>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      {% for el in data %}
+<div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">{{ el.title }}</h4>
+          </div>
+          <div class="card-body">
+              <img src="{{ el.ur }}" width="180" height="200" class="me-2" viewBox="0 0 318 94" role="img">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>{{ el.opp }}</li>
+                <br>
+                <h1 class="card-title pricing-card-title">{{ el.price }}₽<small class="text-body-secondary fw-light"></small></h1>
+            </ul>
+            <a href="/buy/{{ el.id }}" class="w-100 btn btn-lg btn-outline-primary">Купить</a>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+      </div>
+    </div>
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="https://sun9-35.userapi.com/impg/UCV_eS85jAltKwlty7Ha9iFyBarmSXVoRn_fkQ/87gUX13Wx3o.jpg?size=1640x884&quality=96&sign=6153504f801844dbfdc432abdfb09397&type=album" alt="" width="80" height="55">
+        <br>
+       <small class="d-block mb-3 text-body-secondary"><a class="link-secondary text-decoration-none" href="/login">Добавить товар</a></small>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  </footer>
+  </main>
+
+
+{% endblock %}
